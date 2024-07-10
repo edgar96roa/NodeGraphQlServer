@@ -1,0 +1,16 @@
+[
+  {
+    "id": "43aa8c69-a88f-4be8-bb9b-547d1baec0ca",
+    "name": "John Doe",
+    "address": "123 Main St",
+    "email": "john@example.com",
+    "phoneNumber": "+1234567890"
+  },
+  {
+    "id": "0d492da5-5cbc-41ad-bed1-c753def8e348",
+    "name": "Jane Smith",
+    "address": "456 North St",
+    "email": "jane@example.com",
+    "phoneNumber": "+0987654321"
+  }
+]
