@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "07d5efce-97c0-4b80-810b-10d984c1cdec",
+		"name": "GraphQLServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\r\n  createAddress(\r\n    name: \"Edgar Roa C\",\r\n    address: \"Andres St\",\r\n    email: \"edgar_rc@example.com\",\r\n    phoneNumber: \"+525620759194\"\r\n  ) {\r\n    id\r\n    name\r\n    address\r\n    email\r\n    phoneNumber\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Addressess",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n  getAddresses {\r\n    id\r\n    name\r\n    address\r\n    email\r\n    phoneNumber\r\n  }\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Unique Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n  getAddress(id: \"pgwl5cn2bzq\") {\r\n    id\r\n    name\r\n    address\r\n    email\r\n    phoneNumber\r\n  }\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\r\n  deleteAddress(id: \"pgwl5cn2bzq\")\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

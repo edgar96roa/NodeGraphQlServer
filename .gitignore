@@ -7,6 +7,9 @@ dist/
 # Environment variables
 .env
 
+# Json Output
+AddressBooks.json
+
 # Logs
 *.log
 npm-debug.log*
@@ -14,9 +17,6 @@ npm-debug.log*
 # IDE specific files
 .vscode/
 .idea/
-
-# MacOS specific files
-.DS_Store
 
 # TypeScript cache
 *.tsbuildinfo

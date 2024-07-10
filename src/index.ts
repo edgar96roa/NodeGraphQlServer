@@ -2,11 +2,12 @@ import 'reflect-metadata';
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { buildSchema } from 'type-graphql';
-import { AddressBookResolver } from './resolvers/AddressResolver';
+import { AddressBookResolver } from './presentation/resolvers/AddressBookResolver';
+import logger from './utils/LoggerFactory';
 
 async function startServer() {
   const schema = await buildSchema({
-    resolvers: [AddressBookResolver]
+    resolvers: [AddressBookResolver],
   });
 
   const server = new ApolloServer({
@@ -17,7 +18,7 @@ async function startServer() {
     listen: { port: 4000 },
   });
 
-  console.log(`Server is running at ${url}`);
+  logger.info(`Server is running at ${url}`);
 }
 
 startServer();

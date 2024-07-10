@@ -28,5 +28,5 @@ export class AddressBook {
     this.address = address;
     this.email = email;
     this.phoneNumber = phoneNumber;
-  }
+  };
 }
