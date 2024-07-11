@@ -16,7 +16,7 @@ Follow these steps to set up and run the application locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone <REPOSITORY_URL>
+   git clone https://github.com/edgar96roa/NodeGraphQlServer.git
    cd ts-graphql_backend
 
 2. **Install dependencies:**
@@ -47,30 +47,30 @@ Follow these steps to set up and run the application locally:
 ## Project Structure
 ### The project is organized as follows:
 
-/ts-graphql_backend
-  /node_modules
-  /src
-    /application
-      /services
-        AddressBookService.ts
-    /domain
-      /entities
-        AddressBook.ts
-      /repositories
-        IAddressBookRepository.ts
-    /infrastructure
-      /repositories
-        FileAddressBookRepository.ts
-    /presentation
-      /resolvers
-        AddressBookResolver.ts
-    /utils
-      LoggerFactory.ts
-    index.ts
-  package.json
-  tsconfig.json
-  .gitignore
-  README.md
+- /ts-graphql_backend
+  - /node_modules
+  - /src
+    - /application
+      - /services
+        - AddressBookService.ts
+    - /domain
+      - /entities
+        - AddressBook.ts
+      - /repositories
+        - IAddressBookRepository.ts
+    - /infrastructure
+      - /repositories
+        - FileAddressBookRepository.ts
+    - /presentation
+      - /resolvers
+        - AddressBookResolver.ts
+    - /utils
+      - LoggerFactory.ts
+    - index.ts
+  - package.json
+  - tsconfig.json
+  - .gitignore
+  - README.md
 
 ## Structure Explanation
 - application/services: Contains business logic and application services.
